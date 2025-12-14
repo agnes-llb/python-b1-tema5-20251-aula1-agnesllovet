@@ -56,6 +56,13 @@ Exemple:
 
 # Corret and overwrite class SafeWalletCredentials here 
 class SafeWalletCredentials:
+    def __init__(self,_password):
+        # definem atribut/propietat
+        self._password=_password
+    def get_password(self):
+        return self._password
+    def set_password (self,new_password):
+        self._password=new_password    
     pass
 
 
